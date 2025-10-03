@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animal Shuffle Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Animal Shuffle Game</h1>
+    <div id="controls">
+        <label for="speed">Shuffle Speed (ms):</label>
+        <select id="speed">
+          <option value="500">Fast</option>
+          <option value="1000" selected>Medium</option>
+          <option value="1500">Slow</option>
+        </select>
+        <button id="startbutn">Start Game</button>
+      </div> 
+  <div id="card-container">
+  <div class="card" id="card-cat" tabindex="0" role="button" aria-label="cat"><img id="cat" src="cat.jpg" alt="cat"> </div>
+  <div class="card" id="card-lion" tabindex="0" role="button" aria-label="lion"><img id="lion" src="lion.jpg" alt="lion"> </div>
+  <div class="card" id="card-tiger" tabindex="0" role="button" aria-label="tiger"><img id="tiger" src="tiger.jpg" alt="tiger"> </div>
+  <div class="card" id="card-dog" tabindex="0" role="button" aria-label="dog"><img id="dog" src="dog.jpg" alt="dog"></div>
+
+</div>
+<p id="message">Pick an animal first</p>
+<p id="score">Score: 0</p>
+<script src="script.js"></script>
+</body>
+</html>
